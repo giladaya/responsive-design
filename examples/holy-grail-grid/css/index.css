@@ -9,8 +9,7 @@ body {
 
 #header .logo {
   display: inline-block;
-  font-size: 28px;
-  line-height: 45px;
+  font-size: 25px;
 }
 #header .avatar {
   vertical-align: middle;
