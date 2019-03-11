@@ -1,0 +1,66 @@
+/* --- css grid --- */
+.grid #container {
+  max-width: 980px;
+  margin: auto;
+  
+  display: grid;
+
+  grid-template-areas:
+    "header header header"
+    "nav content side"
+    "footer footer footer";
+
+  grid-template-columns: 220px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 0;
+}
+
+.grid #header {
+  grid-area: header;
+}
+.grid #left {
+  grid-area: nav;
+}
+
+.grid #main {
+  grid-area: content;
+}
+
+.grid #right {
+  grid-area: side;
+}
+
+#footer {
+  grid-area: footer;
+  height: 200px
+}
+
+@media only screen and (max-width: 980px) {
+  .grid #container {
+    grid-template-areas:
+    "header header header"
+    "nav content content"
+    "nav side side"
+    "footer footer footer";
+
+    grid-template-columns: 220px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .grid #container {
+    grid-template-areas:
+    "header header header"
+    "nav content content"
+    "nav side side"
+    "footer footer footer";
+
+    grid-template-columns: 20px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+  }
+  .grid #left {
+    position: relative;
+    width: 220px;
+    left: -200px;
+  }
+}

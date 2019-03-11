@@ -1,0 +1,28 @@
+/* --- Media Queries --- */
+/* Still hard to modify section sizes */
+@media only screen and (max-width: 980px) {
+  #main {
+    width: calc(100% - 220px);
+  }
+  #right {
+    position: relative;
+    height: 100%;
+    left: 220px;
+    width: calc(100% - 220px);
+  }
+}
+@media only screen and (max-width: 640px) {
+  #left {
+    left: -200px;
+  }
+  #main {
+    width: calc(100% - 20px);
+    left: 20px;
+  }
+  #right {
+    position: relative;
+    height: 100%;
+    left: 20px;
+    width: calc(100% - 20px);
+  }
+}

@@ -1,0 +1,66 @@
+/* --- Fixed --- */
+body {
+  width: 1920px;
+  height: 1080px;
+}
+#container {
+  position: absolute;
+  top: 0;
+  left: 470px;
+  width: 980px;
+  height: 1080px;
+}
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 980px;
+  height: 65px;
+}
+#wrapper {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 980px;
+  height: 815px;
+}
+#left {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 220px;
+  height: 815px;
+}
+#main {
+  position: absolute;
+  top: 0;
+  left: 220px;
+  width: 560px;
+  height: 815px;
+}
+#right {
+  position: absolute;
+  top: 0;
+  left: calc(220px + 560px);
+  width: 200px;
+  height: 815px;
+}
+#footer {
+  position: absolute;
+  top: 880px;
+  left: 0px;
+  width: 980px;
+  height: 200px;
+}
+
+/* --- centered ---*/
+body.centered {
+  width: auto;
+}
+.centered #container {
+  position: relative;
+  margin: auto;
+  width: 980px;
+  height: 1080px;
+  left: initial;
+}

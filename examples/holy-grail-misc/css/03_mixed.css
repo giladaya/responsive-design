@@ -1,0 +1,46 @@
+/* --- Mixed --- */
+/* Doesn't work in extremes */
+/* Still hard to modify section sizes */
+body {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+#container {
+  position: relative;
+  margin: auto;
+  max-width: 980px;
+}
+#header {
+  height: 65px;
+}
+#wrapper {
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 65px - 200px);
+}
+#left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100%;
+}
+#main {
+  position: relative;
+  top: 0;
+  left: 220px;
+  width: calc(100% - 220px - 200px);
+  height: 100%;
+}
+#right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100%;
+}
+#footer {
+  height: 200px;
+}

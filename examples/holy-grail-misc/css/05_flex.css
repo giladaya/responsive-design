@@ -1,0 +1,50 @@
+/* --- Flex --- */
+#container {
+  display: flex;
+  flex-direction: column;
+  max-width: 980px;
+  margin: auto;
+}
+
+#wrapper {
+  display: flex;
+  flex: 1;
+}
+#left {
+  width: 220px;
+}
+#main {
+  flex: 1;
+}
+#right {
+  width: 200px;
+}
+#footer {
+  height: 200px;
+}
+
+@media only screen and (max-width: 980px) {
+  #wrapper {
+    flex-wrap: wrap;
+  }
+  #right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  #wrapper {
+    position: relative;
+  }
+  #left {
+    position: absolute;
+    height: 100%;
+    left: -200px;
+  }
+  #main {
+    padding-left: 30px;
+    left: 20px;
+  }
+  #right {
+    padding-left: 30px;
+  }
+}
